@@ -1,0 +1,21 @@
+parameters:
+	ignoreErrors:
+		-
+			message: "#^Cannot call method in\\(\\) on iterable\\<SplFileInfo\\>\\.$#"
+			count: 1
+			path: .php-cs-fixer.php
+
+		-
+			message: "#^Property BaseCodeOy\\\\Haiku\\\\Haiku\\:\\:\\$adj type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Haiku.php
+
+		-
+			message: "#^Property BaseCodeOy\\\\Haiku\\\\Haiku\\:\\:\\$nouns type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Haiku.php
+
+		-
+			message: "#^Undefined variable\\: \\$this$#"
+			count: 1
+			path: tests/Pest.php
